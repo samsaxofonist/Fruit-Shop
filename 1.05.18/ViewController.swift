@@ -53,6 +53,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.nameLabel.text = nameOfCategories
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nameOfCategories = categoriesNames[indexPath.row]
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "secondScreen") as! NewControllerViewController
+        controller.categoryName = nameOfCategories
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
     
 
