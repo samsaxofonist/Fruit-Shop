@@ -18,8 +18,9 @@ class CategoriesParser {
         var categoriesNames: [String] = []
         
         for catDict in categories {
-            let catKey = catDict["name"] as! String
-            categoriesNames.append(catKey)
+            if let catKey = catDict["name"] as? String {
+                categoriesNames.append(catKey)
+            }
     }
         return categoriesNames
 }

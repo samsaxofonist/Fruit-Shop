@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
         }
-        let serverAdress: String = "https://api.predic8.de/shop/docs"
+        let serverAdress: String = "http://api.predic8.de/shop/categories/"
         if let myUrl = URL(string: serverAdress) {
         let request = URLSession.shared.dataTask(with: myUrl, completionHandler: finishBlock)
         request.resume()
