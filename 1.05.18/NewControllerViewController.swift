@@ -22,14 +22,7 @@ class NewControllerViewController: UIViewController {
                 return
                 
             }
-            guard let validData = data else {return}
-            guard let json = try? JSONSerialization.jsonObject(with: validData, options: []) else {return}
-            guard let dict = json as? [String: Any] else {return}
-            guard let categories = dict["products"] as? [[String: Any]] else {return}
-            for catDict in categories {
-                let catKey = catDict["name"] as! String
-                //self.categoriesNames.append(catKey)
-            }
+           
             DispatchQueue.main.async {
                 //self.tableView.reloadData()
             }

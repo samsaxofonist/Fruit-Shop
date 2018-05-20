@@ -12,31 +12,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     var categoriesNames: [String] = []
+    let parser = CategoriesParser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let finishBlock: ((Data?, URLResponse?, Error?) -> Void) = { data, response, error in
+            
             guard error == nil else {
                 let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 return
-                
-            }
-            guard let validData = data else {return}
-            guard let json = try? JSONSerialization.jsonObject(with: validData, options: []) else {return}
-            guard let dict = json as? [String: Any] else {return}
-            guard let categories = dict["categories"] as? [[String: Any]] else {return}
-            for catDict in categories {
-                let catKey = catDict["name"] as! String
-                self.categoriesNames.append(catKey)
-            }
+                }
+            let categories = self.parser.parsecategories(data: data)
+           self.categoriesNames.append(contentsOf: categories)
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
             
         }
-        let serverAdress: String = "http://api.predic8.de/shop/categories/"
+        let serverAdress: String = "https://api.predic8.de/shop/docs"
         if let myUrl = URL(string: serverAdress) {
         let request = URLSession.shared.dataTask(with: myUrl, completionHandler: finishBlock)
         request.resume()
