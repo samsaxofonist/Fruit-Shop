@@ -8,12 +8,13 @@
 
 import Foundation
 
-class CategoriesParser {
-    func parsecategories(data: Data?) -> [String] {
+class Parser {
+    
+    func parseItems(data: Data?, key: String) -> [String] {
         guard let validData = data else { return [] }
         guard let json = try? JSONSerialization.jsonObject(with: validData, options: []) else { return [] }
         guard let dict = json as? [String: Any] else { return [] }
-        guard let categories = dict["categories"] as? [[String: Any]] else { return [] }
+        guard let categories = dict[key] as? [[String: Any]] else { return [] }
         
         var categoriesNames: [String] = []
         
@@ -21,7 +22,7 @@ class CategoriesParser {
             if let catKey = catDict["name"] as? String {
                 categoriesNames.append(catKey)
             }
-    }
+        }
         return categoriesNames
-}
+    }
 }

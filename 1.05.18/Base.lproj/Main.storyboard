@@ -13,7 +13,7 @@
         <!--Categories-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Categories" id="BYZ-38-t0r" customClass="ViewController" customModule="_5_05_18" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Categories" id="BYZ-38-t0r" customClass="CategoriesViewController" customModule="_5_05_18" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="951" y="134"/>
         </scene>
-        <!--New Controller View Controller-->
+        <!--Fruits View Controller-->
         <scene sceneID="0kG-et-ebW">
             <objects>
-                <viewController storyboardIdentifier="secondScreen" id="Y6x-9O-Hgy" customClass="NewControllerViewController" customModule="_5_05_18" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondScreen" id="Y6x-9O-Hgy" customClass="FruitsViewController" customModule="_5_05_18" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1bw-6b-ZIc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,11 +97,18 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6x-9O-Hgy" id="d0J-ZR-QWd"/>
+                                    <outlet property="delegate" destination="Y6x-9O-Hgy" id="obR-Y2-SNy"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W5U-OR-cdP"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6UE-ns-3FO" id="Xk5-8Z-BdX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUX-BL-5AQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
