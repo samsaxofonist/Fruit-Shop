@@ -14,6 +14,8 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     var categoriesNames: [String] = []
     let loader = Loader()
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +28,7 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
             self.categoriesNames.append(contentsOf: categories)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.activity.isHidden = true
             }
         })
     }
@@ -35,9 +38,26 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: MyCell = self.tableView.dequeueReusableCell(withIdentifier: "firstCell") as! MyCell
+        let cell: CellCategories = self.tableView.dequeueReusableCell(withIdentifier: "firstCell") as! CellCategories
         let nameOfCategories = categoriesNames[indexPath.row]
         cell.nameLabel.text = nameOfCategories
+        if nameOfCategories == "Fruits" {
+            cell.imegeView.image = UIImage(named: "banana")
+        } else if nameOfCategories == "Dried" {
+            cell.imegeView.image = UIImage(named: "iconDried")
+        } else if nameOfCategories == "Fresh" {
+            cell.imegeView.image = UIImage(named: "iconWatermelon")
+        } else if nameOfCategories == "Exotic" {
+            cell.imegeView.image = UIImage(named: "iconExotic")
+        } else if nameOfCategories == "Nuts" {
+            cell.imegeView.image = #imageLiteral(resourceName: "iconNut")
+        } else {
+            cell.imegeView.image = #imageLiteral(resourceName: "placeholder")
+        }
+        
+        
+        
+        
         return cell
     }
     

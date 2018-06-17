@@ -28,7 +28,7 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
                 
                 self.frutsDict.append(contentsOf: categories)
-                DispatchQueue.main.async {
+                DispatchQueue.main.async {                    
                     self.tableView.reloadData()
                 }
             })
@@ -43,9 +43,9 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: MyCell = self.tableView.dequeueReusableCell(withIdentifier: "secondCell") as! MyCell
+        let cell: CellFruts = self.tableView.dequeueReusableCell(withIdentifier: "secondCell") as! CellFruts
         let nameOfFruts = frutsDict[indexPath.row]
-        cell.nameLabel.text = nameOfFruts
+        cell.labelFruits.text = nameOfFruts
         return cell
     }
 
