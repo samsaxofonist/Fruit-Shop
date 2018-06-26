@@ -11,7 +11,8 @@ import UIKit
 class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     
-
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     @IBOutlet weak var tableView: UITableView!
     var categoryName: String?
     var frutsDict: [String] = []
@@ -30,6 +31,7 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.frutsDict.append(contentsOf: categories)
                 DispatchQueue.main.async {                    
                     self.tableView.reloadData()
+                    self.activity.isHidden = true
                 }
             })
         
@@ -46,6 +48,20 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell: CellFruts = self.tableView.dequeueReusableCell(withIdentifier: "secondCell") as! CellFruts
         let nameOfFruts = frutsDict[indexPath.row]
         cell.labelFruits.text = nameOfFruts
+        
+        if nameOfFruts == "Bananas" {
+            cell.imageFruits.image = UIImage(named: "banana")
+        } else if nameOfFruts == "Pineapples" {
+            cell.imageFruits.image = #imageLiteral(resourceName: "pineapple")
+        } else if nameOfFruts == "Fresh" {
+            cell.imageFruits.image = UIImage(named: "iconWatermelon")
+        } else if nameOfFruts == "Exotic" {
+            cell.imageFruits.image = UIImage(named: "iconExotic")
+        } else if nameOfFruts == "Nuts" {
+            cell.imageFruits.image = #imageLiteral(resourceName: "iconNut")
+        } else {
+            cell.imageFruits.image = #imageLiteral(resourceName: "placeholder")
+        }
         return cell
     }
 

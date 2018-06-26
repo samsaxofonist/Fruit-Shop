@@ -18,7 +18,7 @@ class CellCategories: UITableViewCell {
         super.awakeFromNib()
         
         self.container.layer.cornerRadius = 5
-        self.container.layer.shadowColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        self.container.layer.shadowColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         self.container.layer.shadowOffset = CGSize(width: 0, height: 3)
         self.container.layer.shadowOpacity = 0.5
         self.container.layer.masksToBounds = false
