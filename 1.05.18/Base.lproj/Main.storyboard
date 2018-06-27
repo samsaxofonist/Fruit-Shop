@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oZ1-yL-13K">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oZ1-yL-13K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.94117647059999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="firstCell" id="PDn-TZ-xPt" customClass="CellCategories" customModule="_5_05_18" customModuleProvider="target">
@@ -45,6 +44,14 @@
                                                                 <constraint firstAttribute="width" constant="62" id="8io-BJ-Mpc"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vST-pJ-M0u" customClass="SSBouncyButton">
+                                                            <rect key="frame" x="239" y="18" width="46" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" red="0.70196078429999997" green="0.26274509800000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="Button">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -84,7 +91,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.94117647058823528" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oZ1-yL-13K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Yg-lE-XBs"/>
+                            <constraint firstItem="oZ1-yL-13K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UfA-VH-GeH"/>
                             <constraint firstItem="q8m-Q1-Oo9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hMX-Rg-pVV"/>
+                            <constraint firstItem="oZ1-yL-13K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ox2-cb-u6X"/>
+                            <constraint firstItem="oZ1-yL-13K" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pL9-Ff-OQZ"/>
                             <constraint firstItem="q8m-Q1-Oo9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yNh-J8-NG3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -164,6 +175,7 @@
                                             <outlet property="container" destination="MWo-Ov-lfl" id="nDl-TR-KAK"/>
                                             <outlet property="imageFruits" destination="4YJ-Gy-sda" id="8yk-nc-RDB"/>
                                             <outlet property="labelFruits" destination="yC5-G0-Vcj" id="4L0-Zc-V5X"/>
+                                            <segue destination="Dbw-x3-y2u" kind="show" id="Gc5-rC-9cO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -215,6 +227,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcK-Mg-ZM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2544.8000000000002" y="134.48275862068968"/>
+        </scene>
+        <!--Calendar Delegate-->
+        <scene sceneID="iQd-RS-8Hr">
+            <objects>
+                <viewController title="Calendar" id="Dbw-x3-y2u" customClass="CalendarViewController" customModule="_5_05_18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ha-LM-Fjy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irK-QS-hfU" customClass="CVCalendarMenuView" customModule="CVCalendar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Vaw-fR-ukc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="menuViewDelegate" destination="Dbw-x3-y2u" id="can-3L-vHy"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVr-rC-Ufj" customClass="CVCalendarView" customModule="CVCalendar">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="calendarDelegate" destination="Dbw-x3-y2u" id="crR-bW-bmx"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BVr-rC-Ufj" firstAttribute="leading" secondItem="3rk-Vy-LeY" secondAttribute="leading" id="2lr-6I-i7e"/>
+                            <constraint firstItem="irK-QS-hfU" firstAttribute="top" secondItem="6Ha-LM-Fjy" secondAttribute="top" constant="64" id="Dlv-Bw-hCg"/>
+                            <constraint firstItem="irK-QS-hfU" firstAttribute="leading" secondItem="3rk-Vy-LeY" secondAttribute="leading" id="b35-wz-qD4"/>
+                            <constraint firstItem="3rk-Vy-LeY" firstAttribute="bottom" secondItem="BVr-rC-Ufj" secondAttribute="bottom" id="cnt-iI-mkk"/>
+                            <constraint firstItem="BVr-rC-Ufj" firstAttribute="top" secondItem="irK-QS-hfU" secondAttribute="bottom" id="eux-vW-Dp6"/>
+                            <constraint firstItem="BVr-rC-Ufj" firstAttribute="trailing" secondItem="3rk-Vy-LeY" secondAttribute="trailing" id="ohH-XF-vqf"/>
+                            <constraint firstItem="irK-QS-hfU" firstAttribute="trailing" secondItem="3rk-Vy-LeY" secondAttribute="trailing" id="sLC-Gs-9v5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3rk-Vy-LeY"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="BVr-rC-Ufj" id="kwF-lu-PIQ"/>
+                        <outlet property="menuView" destination="irK-QS-hfU" id="vnj-Te-Atv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1U-hg-f1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="131.78410794602701"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Rx-ew-kxR">
