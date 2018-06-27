@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32BF587A20E3F59200E187B3 /* DreiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF587920E3F59200E187B3 /* DreiTableView.swift */; };
 		32CE237520A458B00073DD2C /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CE237420A458B00073DD2C /* FruitsViewController.swift */; };
 		32CE237720AB487A0073DD2C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CE237620AB487A0073DD2C /* Parser.swift */; };
 		32D2F0E5209894780075B9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2F0E4209894780075B9EB /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32BF587920E3F59200E187B3 /* DreiTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreiTableView.swift; sourceTree = "<group>"; };
 		32CE237420A458B00073DD2C /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
 		32CE237620AB487A0073DD2C /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		32D2F0E1209894780075B9EB /* 15.05.18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 15.05.18.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,7 @@
 		32D2F0D8209894780075B9EB = {
 			isa = PBXGroup;
 			children = (
+				32BF587920E3F59200E187B3 /* DreiTableView.swift */,
 				32D2F0E3209894780075B9EB /* 1.05.18 */,
 				32D2F0E2209894780075B9EB /* Products */,
 			);
@@ -159,6 +162,7 @@
 				3E8DCA0720C06D7E0039F9C1 /* Extention.swift in Sources */,
 				3E8DCA0920C071640039F9C1 /* Loader.swift in Sources */,
 				3E40ECE020D6E13500F10616 /* CellCategories.swift in Sources */,
+				32BF587A20E3F59200E187B3 /* DreiTableView.swift in Sources */,
 				3E40ECDE20D6E0F200F10616 /* CellFruts.swift in Sources */,
 				32CE237520A458B00073DD2C /* FruitsViewController.swift in Sources */,
 			);

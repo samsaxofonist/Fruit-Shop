@@ -20,6 +20,7 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let loader = Loader()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         if let catName = categoryName {
             loader.loadProducts(categories: catName, finishBlock: { categories, error in
@@ -36,6 +37,10 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             })
         
         }
+        func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+            return true
+        }
+        
    
     }
     
@@ -63,6 +68,14 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.imageFruits.image = #imageLiteral(resourceName: "placeholder")
         }
         return cell
+    }
+    private func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+        }
     }
 
 }
