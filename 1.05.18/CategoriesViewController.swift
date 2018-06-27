@@ -69,6 +69,15 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         controller.categoryName = nameOfCategories
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        self.categoriesNames.remove(at: indexPath.row)
+        tableView.reloadData()
+    }
 }
     
 

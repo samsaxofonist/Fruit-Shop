@@ -1,0 +1,1486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E952B9314599F420564AAF2FEA748E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */; };
+		066227711F9C41F8D2713877141F99DD /* SSBouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55BC450BEB67968C670E4B3276BCC1 /* SSBouncyButton.m */; };
+		080317F9E7AE9ECA5859B198E6983F87 /* CVCalendarViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060057976551E1CBCDB864D0CAA562F /* CVCalendarViewAppearance.swift */; };
+		087D4DB198079D0A6E0E9EBF496C36A6 /* CVCalendarContentPresentationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1A17A3F0823153CCFB220DE01D99B /* CVCalendarContentPresentationCoordinator.swift */; };
+		08C9374922D4362EF536856FFA6807D1 /* CVShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F91C957DDB0810C6C58E81E0A8E825 /* CVShape.swift */; };
+		08E25D571F4067DB88E3737B73FCB550 /* CVCalendarDayViewControlCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180DECCE1D051F45BD666AD2DDB0794 /* CVCalendarDayViewControlCoordinator.swift */; };
+		0AEC580E53B574CADD2DFED5554D431B /* CVCalendarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD91CD0B797E94BBAE30537946938A6 /* CVCalendarMenuView.swift */; };
+		0C5827DA5FCEBF2B397BE32E63CA4951 /* CVCalendarTouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F5E691A459CEB372F8D24A7E4CB57 /* CVCalendarTouchController.swift */; };
+		0D18B8FA495BCFC1F34B12C112A24FA9 /* CVCalendarWeekContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7727612A62733345981999A406DF0 /* CVCalendarWeekContentViewController.swift */; };
+		0DE8F79470976EA5F734815367C3A93D /* CVRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162DF99F210F4DF5322431F8F103DBE /* CVRange.swift */; };
+		12E1E7C73ADF659B42105AE1A105613B /* Pods-15.05.18-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9AA85541AA9CC0988FEBA6926F5F734 /* Pods-15.05.18-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A25244E51AE2F3EC55A1432BED120B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC81AAD053531445E0B4B713053C96E3 /* UIKit.framework */; };
+		1D866FF39506CAA7AE27C92A4FA9CD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */; };
+		24DE5BC49B434239C01F130853F3BB47 /* CVPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11701182D7F509D433E960A6E84ABF /* CVPresent.swift */; };
+		24EC8DB300E51AA037D137A3DAFC2092 /* UIColor-Hex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29926808218043F6F9E2419D2DCA5C7F /* UIColor-Hex-dummy.m */; };
+		28E7A26C7865082B28BFFFE0D03E5BFC /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 24695F2841A4E509D2D84604C6B02642 /* UIColor+Hex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		297AE389C5B80A95FAE99BF052A78B77 /* CVCalendarMonthContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE5841CF0AE261A7B796EFF9D50859 /* CVCalendarMonthContentViewController.swift */; };
+		29D85DDD40D5465482974288F00D5888 /* CVCalendarWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD332EA740C2BD343DC6F837F7EF26 /* CVCalendarWeekday.swift */; };
+		2A0A069D7638FF4A3DE89AAA356B2BFF /* UIImage+BetterAdditions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AEC09AAABE935F9E129FB032072515 /* UIImage+BetterAdditions-dummy.m */; };
+		2A65EB93526EFEF8BC8A87D29D0C2E2D /* CVCalendarViewPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A64E0BA97B8BA42FDF86E45C6FECF0 /* CVCalendarViewPresentationMode.swift */; };
+		2EAB19530B286D0D0310D19C7B098368 /* UIImage_BetterAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF72512CAF489C6515E17EAC85ADCB9 /* UIImage_BetterAdditions.framework */; };
+		35D405A2446841B470D3CD2ABBD9E28A /* CVCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394C9802080F4134BC64CFC98289406 /* CVCalendarView.swift */; };
+		3E3DBD80B0079A74FEA10F980A1E1F65 /* CVSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAA47B2F5E426669B69EED16869BEC2 /* CVSet.swift */; };
+		424098A17F6312CDB3CBC82A24B9FB5F /* CVCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759D45827FB91F4E56695CBF1CB0CEA /* CVCalendarMonthView.swift */; };
+		4ACC400C627AB34EE49E9F683BC3ADB6 /* CVCalendarViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD892138FC45C24630F1C06171E52CD7 /* CVCalendarViewAnimator.swift */; };
+		55992F417E3CEB82C9D0801FF8F7C683 /* CVStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C66FC50EA941F8AAD9C163AF8B6195 /* CVStatus.swift */; };
+		5B0E9426904F6A25624A2F8D3F7FFC33 /* SSBouncyButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D68E10C4BC620690594FA66D529046 /* SSBouncyButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8E66E7731511F7FA7036E7EE9DBD16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */; };
+		5D46EC7EC415BB4CB732CB199C3DB274 /* CVCalendarViewAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1A21D27C7A94B6B1033004ED3478D /* CVCalendarViewAnimatorDelegate.swift */; };
+		5F2F05A18EE24F5CA55ED9B67108B899 /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4E0210FC3D0A7A4E230F553820D14 /* UIColor+Hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FADD1F3D51998602274BE46C861DF8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */; };
+		636776ABDD81484870BD1A74A8930A42 /* CVWeekdaySymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553C46B53C8F9558F079A8A28B94D7D /* CVWeekdaySymbolType.swift */; };
+		7573BF241B90750E50BBEBD1AEB8B479 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC81AAD053531445E0B4B713053C96E3 /* UIKit.framework */; };
+		7B4519379C79938C793F33A9D7055C89 /* CVCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9326E097CD92C5F1B8F54B5D2A5F8F50 /* CVCalendarViewDelegate.swift */; };
+		862114DAF0FC44D31E88FF39EDCB74EE /* CVCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB94254AF65122221D41F29014BEAB /* CVCalendarWeekView.swift */; };
+		8837229BF4671DB0DB6D20796FC6EDF4 /* UIColor_Hex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FF64A45BF68311248DFA0F8E2EA33F /* UIColor_Hex.framework */; };
+		8E2890DC209BEA261A65158E8628B245 /* CVDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8067E2AB4CCAFA3F449B81ED03C7320 /* CVDate.swift */; };
+		8E979FF9BD29B0E1AC215131505A2500 /* CVCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F52FB8C15F4331280A09BC889003F2F /* CVCalendar-dummy.m */; };
+		95819756446657DB136F6B9AD56ACC7C /* CVCalendarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D92297AE6376AD95B9047C58BE77D5 /* CVCalendarContentViewController.swift */; };
+		9B829B8E2E5514F9321AA13524F3D16C /* UIImage+BetterAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D1401B389ABD7AF6A7BF799BFF13B /* UIImage+BetterAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9FC818B1F09AC9AAE2C3E1167D8EBE26 /* SSBouncyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B0CED2E642793DC1D5F3ED24E4C55 /* SSBouncyButton-dummy.m */; };
+		A2CEEDEF3E0DA968FB9A712ECEE8FF8D /* Pods-15.05.18-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB4A8AE47A62D80F8C303D1A3176657 /* Pods-15.05.18-dummy.m */; };
+		A35FFF8775E5736CB18803C37BC57BCB /* BRYSerialAnimationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CFEF358A914DD7DCC25CAC7421407 /* BRYSerialAnimationQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD1AB3A5D5647072F03638FED918931F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC81AAD053531445E0B4B713053C96E3 /* UIKit.framework */; };
+		AFE503163C3B142135889C82C6F5B83B /* SSBouncyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E75E03B54BD124E4750830F7FC02F0 /* SSBouncyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B21CAD5B3C99F2828E72AB852501949E /* CVCalendarMenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3246FB7251E0E16F6636AC2A8091C66D /* CVCalendarMenuViewDelegate.swift */; };
+		B74ABCCB2254EDC1638369A95A5D8E8B /* BRYSerialAnimationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C952D9DFAF46FDC7579D72E4BC9D8D /* BRYSerialAnimationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCFFE94D8FC5B5148E6D0EA875F04CED /* CVAuxiliaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2057C1FA585F8EC15485E00376443DC /* CVAuxiliaryView.swift */; };
+		BD8C1994C5993519099C91760E4A0A4F /* CVCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6AA90A6C352BF919EF26543B02E0E /* CVCalendarManager.swift */; };
+		C64377EB2C34A7B1F3D421F0E298F1D6 /* BRYSerialAnimationQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB26B62E0E1D2E7BE16438D64569941 /* BRYSerialAnimationQueue.framework */; };
+		CCF2A952B6C95BD3C2448CFC731479F6 /* CVCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25147D373AB6AE0B5C3737CF1EBA376C /* CVCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB2699F46400E7A9C7ADF31FAE9394C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */; };
+		CFED8618DEDF5E496ED11172CC566D36 /* CVScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5759AD31560EC66D4E2D7717D547E8 /* CVScrollDirection.swift */; };
+		DE780F8691AEC791686C59B15C541B52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */; };
+		E0D6F05C0F6FEB13F091487B564C9EFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4C9E4EEDE8B8339ABBBB45C3E0835F /* QuartzCore.framework */; };
+		E39B8D7A4AF9FE6145DDA7701E3FD2FA /* BRYSerialAnimationQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BDDF6FC8A01A5316B62106B644E815A /* BRYSerialAnimationQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F90ACA6D10664AD8257965B1E51DF2 /* UIImage+BetterAdditions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD752B1FC53DBBE86EC133AD1F3A6C6 /* UIImage+BetterAdditions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF8CEC10476EF1286E987A05C489CF14 /* CVCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B26629972F609879189C7F8F35A8C /* CVCalendarDayView.swift */; };
+		F7AF1C86AB6D1593D751B0E1832A0ADD /* CVSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24576A4F4C45765C83B6F009F4CC98A4 /* CVSelectionType.swift */; };
+		F8BEBC97D35EB4DAB710F84B99FCFCFE /* UIColor-Hex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2EA9E377E4B616D3FD516377105FA6 /* UIColor-Hex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8D433CA471973BC21DA610BC14BCEEB /* BRYSerialAnimationQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B8FA600F1732F8FD5DA8122E91526D /* BRYSerialAnimationQueue-dummy.m */; };
+		FC33E4BC95EA56D2DEE05C2531C4F865 /* UIImage+BetterAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D9CCCB753921C2618E632F50A9811E /* UIImage+BetterAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFA3BA94195F28E6ECB5E4E96211DE54 /* CVCalendarViewAppearanceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CEB3D320BF7733235D219CE743001D /* CVCalendarViewAppearanceDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		337A4067771A2FD38A4FFA2713283BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4187F7D628A6C707C76FDE3749E20A;
+			remoteInfo = "UIColor-Hex";
+		};
+		9D075A5C48384B2FED25A0E4E9C00517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64072F159A2B32BE2F119933E5BE3B99;
+			remoteInfo = "UIImage+BetterAdditions";
+		};
+		A0E0FF5ABC5B06528DE225E0A6E4E9ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64072F159A2B32BE2F119933E5BE3B99;
+			remoteInfo = "UIImage+BetterAdditions";
+		};
+		A46C779593E6AFB4670F260865EFE277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4187F7D628A6C707C76FDE3749E20A;
+			remoteInfo = "UIColor-Hex";
+		};
+		B4EFEDB727FE349BA13EED3C702DF2A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005028F4A259C5603C6AFA698F9225D6;
+			remoteInfo = BRYSerialAnimationQueue;
+		};
+		B75CB0A21EE2E38310AA8B76C80532F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22183E55C148A7236B34EC2D6AA97F3A;
+			remoteInfo = SSBouncyButton;
+		};
+		EB11D83105B185B3F57203EDB3619EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005028F4A259C5603C6AFA698F9225D6;
+			remoteInfo = BRYSerialAnimationQueue;
+		};
+		EE67802074F84FA30A28FAC41A755ACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6204A345A37C6CEE4D4E8E67F6A48C5;
+			remoteInfo = CVCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0180DECCE1D051F45BD666AD2DDB0794 /* CVCalendarDayViewControlCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarDayViewControlCoordinator.swift; path = CVCalendar/CVCalendarDayViewControlCoordinator.swift; sourceTree = "<group>"; };
+		028088D0267A491D051B8C5A7C9DA91D /* SSBouncyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSBouncyButton.framework; path = SSBouncyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0394C9802080F4134BC64CFC98289406 /* CVCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarView.swift; path = CVCalendar/CVCalendarView.swift; sourceTree = "<group>"; };
+		055C8B67BF270C9E7ED03D87D5F05FC0 /* UIImage_BetterAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIImage_BetterAdditions.framework; path = "UIImage+BetterAdditions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDDF6FC8A01A5316B62106B644E815A /* BRYSerialAnimationQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYSerialAnimationQueue-umbrella.h"; sourceTree = "<group>"; };
+		0E52406F30897E654844F5CBF6F6DD69 /* BRYSerialAnimationQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRYSerialAnimationQueue.xcconfig; sourceTree = "<group>"; };
+		1162DF99F210F4DF5322431F8F103DBE /* CVRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVRange.swift; path = CVCalendar/CVRange.swift; sourceTree = "<group>"; };
+		1FDE5841CF0AE261A7B796EFF9D50859 /* CVCalendarMonthContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarMonthContentViewController.swift; path = CVCalendar/CVCalendarMonthContentViewController.swift; sourceTree = "<group>"; };
+		20A64E0BA97B8BA42FDF86E45C6FECF0 /* CVCalendarViewPresentationMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarViewPresentationMode.swift; path = CVCalendar/CVCalendarViewPresentationMode.swift; sourceTree = "<group>"; };
+		24576A4F4C45765C83B6F009F4CC98A4 /* CVSelectionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVSelectionType.swift; path = CVCalendar/CVSelectionType.swift; sourceTree = "<group>"; };
+		24695F2841A4E509D2D84604C6B02642 /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Classes/UIColor+Hex.m"; sourceTree = "<group>"; };
+		246C35CF569330C6947FE94D491C109C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F201A6B6790CC81A9C55B27B8FDD44 /* SSBouncyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSBouncyButton-prefix.pch"; sourceTree = "<group>"; };
+		25147D373AB6AE0B5C3737CF1EBA376C /* CVCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CVCalendar-umbrella.h"; sourceTree = "<group>"; };
+		2759D45827FB91F4E56695CBF1CB0CEA /* CVCalendarMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarMonthView.swift; path = CVCalendar/CVCalendarMonthView.swift; sourceTree = "<group>"; };
+		29926808218043F6F9E2419D2DCA5C7F /* UIColor-Hex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-dummy.m"; sourceTree = "<group>"; };
+		2D3B44E39056F1CFA5DEC23C824584F8 /* Pods_15_05_18.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_15_05_18.framework; path = "Pods-15.05.18.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F52FB8C15F4331280A09BC889003F2F /* CVCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CVCalendar-dummy.m"; sourceTree = "<group>"; };
+		3060057976551E1CBCDB864D0CAA562F /* CVCalendarViewAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarViewAppearance.swift; path = CVCalendar/CVCalendarViewAppearance.swift; sourceTree = "<group>"; };
+		309F7878684E29832136B2A07F7B8EF1 /* UIImage+BetterAdditions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+BetterAdditions-prefix.pch"; sourceTree = "<group>"; };
+		3246FB7251E0E16F6636AC2A8091C66D /* CVCalendarMenuViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarMenuViewDelegate.swift; path = CVCalendar/CVCalendarMenuViewDelegate.swift; sourceTree = "<group>"; };
+		3E2F5E691A459CEB372F8D24A7E4CB57 /* CVCalendarTouchController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarTouchController.swift; path = CVCalendar/CVCalendarTouchController.swift; sourceTree = "<group>"; };
+		43D92297AE6376AD95B9047C58BE77D5 /* CVCalendarContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarContentViewController.swift; path = CVCalendar/CVCalendarContentViewController.swift; sourceTree = "<group>"; };
+		43F91C957DDB0810C6C58E81E0A8E825 /* CVShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVShape.swift; path = CVCalendar/CVShape.swift; sourceTree = "<group>"; };
+		4A2B26629972F609879189C7F8F35A8C /* CVCalendarDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarDayView.swift; path = CVCalendar/CVCalendarDayView.swift; sourceTree = "<group>"; };
+		4A2EA9E377E4B616D3FD516377105FA6 /* UIColor-Hex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-umbrella.h"; sourceTree = "<group>"; };
+		506B612611ABEC61EEA71ECB40374027 /* Pods-15.05.18.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-15.05.18.debug.xcconfig"; sourceTree = "<group>"; };
+		50981AB55733E092C262647CC4DC78EF /* Pods-15.05.18-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-15.05.18-acknowledgements.plist"; sourceTree = "<group>"; };
+		51220D4DB1D2B8AF2FBCAEDDBEE5630A /* CVCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CVCalendar.modulemap; sourceTree = "<group>"; };
+		5BB26B62E0E1D2E7BE16438D64569941 /* BRYSerialAnimationQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRYSerialAnimationQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB1A21D27C7A94B6B1033004ED3478D /* CVCalendarViewAnimatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarViewAnimatorDelegate.swift; path = CVCalendar/CVCalendarViewAnimatorDelegate.swift; sourceTree = "<group>"; };
+		68B8FA600F1732F8FD5DA8122E91526D /* BRYSerialAnimationQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRYSerialAnimationQueue-dummy.m"; sourceTree = "<group>"; };
+		6A11701182D7F509D433E960A6E84ABF /* CVPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVPresent.swift; path = CVCalendar/CVPresent.swift; sourceTree = "<group>"; };
+		70AEC09AAABE935F9E129FB032072515 /* UIImage+BetterAdditions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BetterAdditions-dummy.m"; sourceTree = "<group>"; };
+		74FF64A45BF68311248DFA0F8E2EA33F /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7951877675E0EF9D515F64850E1D3503 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF72512CAF489C6515E17EAC85ADCB9 /* UIImage_BetterAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImage_BetterAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		849CDEF360A63059488899859B4103C3 /* Pods-15.05.18-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-15.05.18-frameworks.sh"; sourceTree = "<group>"; };
+		86E7727612A62733345981999A406DF0 /* CVCalendarWeekContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarWeekContentViewController.swift; path = CVCalendar/CVCalendarWeekContentViewController.swift; sourceTree = "<group>"; };
+		898A6222669C26D943A210CA4487AF7E /* Pods-15.05.18-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-15.05.18-resources.sh"; sourceTree = "<group>"; };
+		8F10B5447C970D9E8155FBE622A54B9E /* UIImage+BetterAdditions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIImage+BetterAdditions.modulemap"; sourceTree = "<group>"; };
+		9326E097CD92C5F1B8F54B5D2A5F8F50 /* CVCalendarViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarViewDelegate.swift; path = CVCalendar/CVCalendarViewDelegate.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9642158E181F5CA2404FB93190498DAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E75E03B54BD124E4750830F7FC02F0 /* SSBouncyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSBouncyButton-umbrella.h"; sourceTree = "<group>"; };
+		9998850076364EBFF02F0C42195BC3CD /* BRYSerialAnimationQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BRYSerialAnimationQueue.modulemap; sourceTree = "<group>"; };
+		9BD91CD0B797E94BBAE30537946938A6 /* CVCalendarMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarMenuView.swift; path = CVCalendar/CVCalendarMenuView.swift; sourceTree = "<group>"; };
+		A33396E8D00C093DB2C67C45A7F4C5AF /* SSBouncyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSBouncyButton.modulemap; sourceTree = "<group>"; };
+		A577B72DD73C5097E3831146E7B2091E /* BRYSerialAnimationQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BRYSerialAnimationQueue.framework; path = BRYSerialAnimationQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D68E10C4BC620690594FA66D529046 /* SSBouncyButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSBouncyButton.h; path = SSBouncyButton/SSBouncyButton.h; sourceTree = "<group>"; };
+		A7FB94254AF65122221D41F29014BEAB /* CVCalendarWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarWeekView.swift; path = CVCalendar/CVCalendarWeekView.swift; sourceTree = "<group>"; };
+		AE5759AD31560EC66D4E2D7717D547E8 /* CVScrollDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVScrollDirection.swift; path = CVCalendar/CVScrollDirection.swift; sourceTree = "<group>"; };
+		B10D46C28A95FC394C8E3A898F68ADC3 /* Pods-15.05.18-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-15.05.18-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B33355FFA69A9FF6C232824AFED9EF5F /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex.framework; path = "UIColor-Hex.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5464F704170C62F1D30ED9E6921E5FD /* CVCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CVCalendar-prefix.pch"; sourceTree = "<group>"; };
+		B67D1401B389ABD7AF6A7BF799BFF13B /* UIImage+BetterAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BetterAdditions.m"; sourceTree = "<group>"; };
+		B7C463564BB507F237964D968DEECA7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3E41BCF4775D38CDE96B50DB8BCFD9 /* Pods-15.05.18.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-15.05.18.release.xcconfig"; sourceTree = "<group>"; };
+		BB4C9E4EEDE8B8339ABBBB45C3E0835F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BB55BC450BEB67968C670E4B3276BCC1 /* SSBouncyButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSBouncyButton.m; path = SSBouncyButton/SSBouncyButton.m; sourceTree = "<group>"; };
+		BC81AAD053531445E0B4B713053C96E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BCB4A8AE47A62D80F8C303D1A3176657 /* Pods-15.05.18-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-15.05.18-dummy.m"; sourceTree = "<group>"; };
+		BDD752B1FC53DBBE86EC133AD1F3A6C6 /* UIImage+BetterAdditions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+BetterAdditions-umbrella.h"; sourceTree = "<group>"; };
+		BE39789C99B12A2F3FE09EE4066048A0 /* UIColor-Hex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIColor-Hex.modulemap"; sourceTree = "<group>"; };
+		C2057C1FA585F8EC15485E00376443DC /* CVAuxiliaryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVAuxiliaryView.swift; path = CVCalendar/CVAuxiliaryView.swift; sourceTree = "<group>"; };
+		C30CFEF358A914DD7DCC25CAC7421407 /* BRYSerialAnimationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BRYSerialAnimationQueue.m; path = Classes/BRYSerialAnimationQueue.m; sourceTree = "<group>"; };
+		C553C46B53C8F9558F079A8A28B94D7D /* CVWeekdaySymbolType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVWeekdaySymbolType.swift; path = CVCalendar/CVWeekdaySymbolType.swift; sourceTree = "<group>"; };
+		C8CEB3D320BF7733235D219CE743001D /* CVCalendarViewAppearanceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarViewAppearanceDelegate.swift; path = CVCalendar/CVCalendarViewAppearanceDelegate.swift; sourceTree = "<group>"; };
+		CA82D53DC510A62DF5DE082C24A9072E /* CVCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CVCalendar.xcconfig; sourceTree = "<group>"; };
+		CC81C14204D22F80E2B0BA60C56C320C /* SSBouncyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSBouncyButton.xcconfig; sourceTree = "<group>"; };
+		CCAA47B2F5E426669B69EED16869BEC2 /* CVSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVSet.swift; path = CVCalendar/CVSet.swift; sourceTree = "<group>"; };
+		CCECE25B58C5081538D10A2CF5FBFB01 /* UIColor-Hex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex.xcconfig"; sourceTree = "<group>"; };
+		CD892138FC45C24630F1C06171E52CD7 /* CVCalendarViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarViewAnimator.swift; path = CVCalendar/CVCalendarViewAnimator.swift; sourceTree = "<group>"; };
+		D1C8627A0B7F883EF90D01E72635524A /* BRYSerialAnimationQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYSerialAnimationQueue-prefix.pch"; sourceTree = "<group>"; };
+		D31AC129214C907199D5B6C77D76A379 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8067E2AB4CCAFA3F449B81ED03C7320 /* CVDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVDate.swift; path = CVCalendar/CVDate.swift; sourceTree = "<group>"; };
+		D9123A33F3D47F7B2313F4C47129F47A /* UIColor-Hex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-prefix.pch"; sourceTree = "<group>"; };
+		DDF4E0210FC3D0A7A4E230F553820D14 /* UIColor+Hex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Classes/UIColor+Hex.h"; sourceTree = "<group>"; };
+		DE60426119954BF70A2293D851FDB88A /* UIImage+BetterAdditions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIImage+BetterAdditions.xcconfig"; sourceTree = "<group>"; };
+		E0BC81FABFCFBDF1793F48E98C332DD9 /* Pods-15.05.18.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-15.05.18.modulemap"; sourceTree = "<group>"; };
+		E1C66FC50EA941F8AAD9C163AF8B6195 /* CVStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVStatus.swift; path = CVCalendar/CVStatus.swift; sourceTree = "<group>"; };
+		E4C952D9DFAF46FDC7579D72E4BC9D8D /* BRYSerialAnimationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BRYSerialAnimationQueue.h; path = Classes/BRYSerialAnimationQueue.h; sourceTree = "<group>"; };
+		E9AA85541AA9CC0988FEBA6926F5F734 /* Pods-15.05.18-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-15.05.18-umbrella.h"; sourceTree = "<group>"; };
+		EEC1A17A3F0823153CCFB220DE01D99B /* CVCalendarContentPresentationCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarContentPresentationCoordinator.swift; path = CVCalendar/CVCalendarContentPresentationCoordinator.swift; sourceTree = "<group>"; };
+		F10EB35FE361F802A152B7238E7EDE05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D6AA90A6C352BF919EF26543B02E0E /* CVCalendarManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarManager.swift; path = CVCalendar/CVCalendarManager.swift; sourceTree = "<group>"; };
+		F2D9CCCB753921C2618E632F50A9811E /* UIImage+BetterAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+BetterAdditions.h"; sourceTree = "<group>"; };
+		F5AD332EA740C2BD343DC6F837F7EF26 /* CVCalendarWeekday.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CVCalendarWeekday.swift; path = CVCalendar/CVCalendarWeekday.swift; sourceTree = "<group>"; };
+		F67B0CED2E642793DC1D5F3ED24E4C55 /* SSBouncyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSBouncyButton-dummy.m"; sourceTree = "<group>"; };
+		FC798BD05EF171C132C743558151A005 /* CVCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CVCalendar.framework; path = CVCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01382247082E0681685FEF8E2BE7EBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8E66E7731511F7FA7036E7EE9DBD16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D37D3A4179264FDD77391FA8EE2326A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB2699F46400E7A9C7ADF31FAE9394C /* Foundation.framework in Frameworks */,
+				AD1AB3A5D5647072F03638FED918931F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FBC684D2AE781EE14566E6E917E7F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE780F8691AEC791686C59B15C541B52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD21726A18778CE01431ECF67B654CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64377EB2C34A7B1F3D421F0E298F1D6 /* BRYSerialAnimationQueue.framework in Frameworks */,
+				1D866FF39506CAA7AE27C92A4FA9CD69 /* Foundation.framework in Frameworks */,
+				E0D6F05C0F6FEB13F091487B564C9EFF /* QuartzCore.framework in Frameworks */,
+				8837229BF4671DB0DB6D20796FC6EDF4 /* UIColor_Hex.framework in Frameworks */,
+				2EAB19530B286D0D0310D19C7B098368 /* UIImage_BetterAdditions.framework in Frameworks */,
+				1A25244E51AE2F3EC55A1432BED120B2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E060666A5C82689E3E369463CE709ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FADD1F3D51998602274BE46C861DF8F /* Foundation.framework in Frameworks */,
+				7573BF241B90750E50BBEBD1AEB8B479 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F921FF29426CEAA3AF99C96D9D83B664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E952B9314599F420564AAF2FEA748E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A6618F6D322D4701BF500FC33595C8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BB26B62E0E1D2E7BE16438D64569941 /* BRYSerialAnimationQueue.framework */,
+				74FF64A45BF68311248DFA0F8E2EA33F /* UIColor_Hex.framework */,
+				7EF72512CAF489C6515E17EAC85ADCB9 /* UIImage_BetterAdditions.framework */,
+				2AC6E34B5797932B578FE435F166745D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10574004CB0BC732484420BC4275DEE5 /* BRYSerialAnimationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				E4C952D9DFAF46FDC7579D72E4BC9D8D /* BRYSerialAnimationQueue.h */,
+				C30CFEF358A914DD7DCC25CAC7421407 /* BRYSerialAnimationQueue.m */,
+				3187B93D9747735CA711BB8704484358 /* Support Files */,
+			);
+			name = BRYSerialAnimationQueue;
+			path = BRYSerialAnimationQueue;
+			sourceTree = "<group>";
+		};
+		13B1AEB0AD5A0E5E4514DEDA8DE50476 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D31AC129214C907199D5B6C77D76A379 /* Info.plist */,
+				A33396E8D00C093DB2C67C45A7F4C5AF /* SSBouncyButton.modulemap */,
+				CC81C14204D22F80E2B0BA60C56C320C /* SSBouncyButton.xcconfig */,
+				F67B0CED2E642793DC1D5F3ED24E4C55 /* SSBouncyButton-dummy.m */,
+				24F201A6B6790CC81A9C55B27B8FDD44 /* SSBouncyButton-prefix.pch */,
+				96E75E03B54BD124E4750830F7FC02F0 /* SSBouncyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSBouncyButton";
+			sourceTree = "<group>";
+		};
+		293D2CD0E011EB34766B4F1941C262E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3000874AA802E21872B43565A2B674A3 /* Pods-15.05.18 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2AC6E34B5797932B578FE435F166745D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7723C3AF32E8EA614F2EFF0298B5FA49 /* Foundation.framework */,
+				BB4C9E4EEDE8B8339ABBBB45C3E0835F /* QuartzCore.framework */,
+				BC81AAD053531445E0B4B713053C96E3 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3000874AA802E21872B43565A2B674A3 /* Pods-15.05.18 */ = {
+			isa = PBXGroup;
+			children = (
+				F10EB35FE361F802A152B7238E7EDE05 /* Info.plist */,
+				E0BC81FABFCFBDF1793F48E98C332DD9 /* Pods-15.05.18.modulemap */,
+				B10D46C28A95FC394C8E3A898F68ADC3 /* Pods-15.05.18-acknowledgements.markdown */,
+				50981AB55733E092C262647CC4DC78EF /* Pods-15.05.18-acknowledgements.plist */,
+				BCB4A8AE47A62D80F8C303D1A3176657 /* Pods-15.05.18-dummy.m */,
+				849CDEF360A63059488899859B4103C3 /* Pods-15.05.18-frameworks.sh */,
+				898A6222669C26D943A210CA4487AF7E /* Pods-15.05.18-resources.sh */,
+				E9AA85541AA9CC0988FEBA6926F5F734 /* Pods-15.05.18-umbrella.h */,
+				506B612611ABEC61EEA71ECB40374027 /* Pods-15.05.18.debug.xcconfig */,
+				BA3E41BCF4775D38CDE96B50DB8BCFD9 /* Pods-15.05.18.release.xcconfig */,
+			);
+			name = "Pods-15.05.18";
+			path = "Target Support Files/Pods-15.05.18";
+			sourceTree = "<group>";
+		};
+		3187B93D9747735CA711BB8704484358 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9998850076364EBFF02F0C42195BC3CD /* BRYSerialAnimationQueue.modulemap */,
+				0E52406F30897E654844F5CBF6F6DD69 /* BRYSerialAnimationQueue.xcconfig */,
+				68B8FA600F1732F8FD5DA8122E91526D /* BRYSerialAnimationQueue-dummy.m */,
+				D1C8627A0B7F883EF90D01E72635524A /* BRYSerialAnimationQueue-prefix.pch */,
+				0BDDF6FC8A01A5316B62106B644E815A /* BRYSerialAnimationQueue-umbrella.h */,
+				246C35CF569330C6947FE94D491C109C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BRYSerialAnimationQueue";
+			sourceTree = "<group>";
+		};
+		375C5A6DDFF808573E014B95893F2486 /* SSBouncyButton */ = {
+			isa = PBXGroup;
+			children = (
+				A5D68E10C4BC620690594FA66D529046 /* SSBouncyButton.h */,
+				BB55BC450BEB67968C670E4B3276BCC1 /* SSBouncyButton.m */,
+				13B1AEB0AD5A0E5E4514DEDA8DE50476 /* Support Files */,
+			);
+			name = SSBouncyButton;
+			path = SSBouncyButton;
+			sourceTree = "<group>";
+		};
+		49669627746C1CC9A8B8B08A88A74366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10574004CB0BC732484420BC4275DEE5 /* BRYSerialAnimationQueue */,
+				98D93D510A33C300018C321F5D413F39 /* CVCalendar */,
+				375C5A6DDFF808573E014B95893F2486 /* SSBouncyButton */,
+				F8336F5ADD703D4B79285AC2BBFC259C /* UIColor-Hex */,
+				FDE47C282D4964C3CAE35A21A9567425 /* UIImage+BetterAdditions */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FF038497AEFEC1D2B7111C3A3A5FA34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7C463564BB507F237964D968DEECA7F /* Info.plist */,
+				BE39789C99B12A2F3FE09EE4066048A0 /* UIColor-Hex.modulemap */,
+				CCECE25B58C5081538D10A2CF5FBFB01 /* UIColor-Hex.xcconfig */,
+				29926808218043F6F9E2419D2DCA5C7F /* UIColor-Hex-dummy.m */,
+				D9123A33F3D47F7B2313F4C47129F47A /* UIColor-Hex-prefix.pch */,
+				4A2EA9E377E4B616D3FD516377105FA6 /* UIColor-Hex-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor-Hex";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0A6618F6D322D4701BF500FC33595C8E /* Frameworks */,
+				49669627746C1CC9A8B8B08A88A74366 /* Pods */,
+				E20A0067FEC9E2BE4FFDC6DFA2AF629E /* Products */,
+				293D2CD0E011EB34766B4F1941C262E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80DAB6356D8E629159EEC42B2CEE6DF9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9642158E181F5CA2404FB93190498DAC /* Info.plist */,
+				8F10B5447C970D9E8155FBE622A54B9E /* UIImage+BetterAdditions.modulemap */,
+				DE60426119954BF70A2293D851FDB88A /* UIImage+BetterAdditions.xcconfig */,
+				70AEC09AAABE935F9E129FB032072515 /* UIImage+BetterAdditions-dummy.m */,
+				309F7878684E29832136B2A07F7B8EF1 /* UIImage+BetterAdditions-prefix.pch */,
+				BDD752B1FC53DBBE86EC133AD1F3A6C6 /* UIImage+BetterAdditions-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIImage+BetterAdditions";
+			sourceTree = "<group>";
+		};
+		98D93D510A33C300018C321F5D413F39 /* CVCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				C2057C1FA585F8EC15485E00376443DC /* CVAuxiliaryView.swift */,
+				EEC1A17A3F0823153CCFB220DE01D99B /* CVCalendarContentPresentationCoordinator.swift */,
+				43D92297AE6376AD95B9047C58BE77D5 /* CVCalendarContentViewController.swift */,
+				4A2B26629972F609879189C7F8F35A8C /* CVCalendarDayView.swift */,
+				0180DECCE1D051F45BD666AD2DDB0794 /* CVCalendarDayViewControlCoordinator.swift */,
+				F1D6AA90A6C352BF919EF26543B02E0E /* CVCalendarManager.swift */,
+				9BD91CD0B797E94BBAE30537946938A6 /* CVCalendarMenuView.swift */,
+				3246FB7251E0E16F6636AC2A8091C66D /* CVCalendarMenuViewDelegate.swift */,
+				1FDE5841CF0AE261A7B796EFF9D50859 /* CVCalendarMonthContentViewController.swift */,
+				2759D45827FB91F4E56695CBF1CB0CEA /* CVCalendarMonthView.swift */,
+				3E2F5E691A459CEB372F8D24A7E4CB57 /* CVCalendarTouchController.swift */,
+				0394C9802080F4134BC64CFC98289406 /* CVCalendarView.swift */,
+				CD892138FC45C24630F1C06171E52CD7 /* CVCalendarViewAnimator.swift */,
+				5EB1A21D27C7A94B6B1033004ED3478D /* CVCalendarViewAnimatorDelegate.swift */,
+				3060057976551E1CBCDB864D0CAA562F /* CVCalendarViewAppearance.swift */,
+				C8CEB3D320BF7733235D219CE743001D /* CVCalendarViewAppearanceDelegate.swift */,
+				9326E097CD92C5F1B8F54B5D2A5F8F50 /* CVCalendarViewDelegate.swift */,
+				20A64E0BA97B8BA42FDF86E45C6FECF0 /* CVCalendarViewPresentationMode.swift */,
+				86E7727612A62733345981999A406DF0 /* CVCalendarWeekContentViewController.swift */,
+				F5AD332EA740C2BD343DC6F837F7EF26 /* CVCalendarWeekday.swift */,
+				A7FB94254AF65122221D41F29014BEAB /* CVCalendarWeekView.swift */,
+				D8067E2AB4CCAFA3F449B81ED03C7320 /* CVDate.swift */,
+				6A11701182D7F509D433E960A6E84ABF /* CVPresent.swift */,
+				1162DF99F210F4DF5322431F8F103DBE /* CVRange.swift */,
+				AE5759AD31560EC66D4E2D7717D547E8 /* CVScrollDirection.swift */,
+				24576A4F4C45765C83B6F009F4CC98A4 /* CVSelectionType.swift */,
+				CCAA47B2F5E426669B69EED16869BEC2 /* CVSet.swift */,
+				43F91C957DDB0810C6C58E81E0A8E825 /* CVShape.swift */,
+				E1C66FC50EA941F8AAD9C163AF8B6195 /* CVStatus.swift */,
+				C553C46B53C8F9558F079A8A28B94D7D /* CVWeekdaySymbolType.swift */,
+				CBC667DD92387503416AC01658AB6CD9 /* Support Files */,
+			);
+			name = CVCalendar;
+			path = CVCalendar;
+			sourceTree = "<group>";
+		};
+		CBC667DD92387503416AC01658AB6CD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51220D4DB1D2B8AF2FBCAEDDBEE5630A /* CVCalendar.modulemap */,
+				CA82D53DC510A62DF5DE082C24A9072E /* CVCalendar.xcconfig */,
+				2F52FB8C15F4331280A09BC889003F2F /* CVCalendar-dummy.m */,
+				B5464F704170C62F1D30ED9E6921E5FD /* CVCalendar-prefix.pch */,
+				25147D373AB6AE0B5C3737CF1EBA376C /* CVCalendar-umbrella.h */,
+				7951877675E0EF9D515F64850E1D3503 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CVCalendar";
+			sourceTree = "<group>";
+		};
+		E20A0067FEC9E2BE4FFDC6DFA2AF629E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A577B72DD73C5097E3831146E7B2091E /* BRYSerialAnimationQueue.framework */,
+				FC798BD05EF171C132C743558151A005 /* CVCalendar.framework */,
+				2D3B44E39056F1CFA5DEC23C824584F8 /* Pods_15_05_18.framework */,
+				028088D0267A491D051B8C5A7C9DA91D /* SSBouncyButton.framework */,
+				B33355FFA69A9FF6C232824AFED9EF5F /* UIColor_Hex.framework */,
+				055C8B67BF270C9E7ED03D87D5F05FC0 /* UIImage_BetterAdditions.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8336F5ADD703D4B79285AC2BBFC259C /* UIColor-Hex */ = {
+			isa = PBXGroup;
+			children = (
+				DDF4E0210FC3D0A7A4E230F553820D14 /* UIColor+Hex.h */,
+				24695F2841A4E509D2D84604C6B02642 /* UIColor+Hex.m */,
+				4FF038497AEFEC1D2B7111C3A3A5FA34 /* Support Files */,
+			);
+			name = "UIColor-Hex";
+			path = "UIColor-Hex";
+			sourceTree = "<group>";
+		};
+		FDE47C282D4964C3CAE35A21A9567425 /* UIImage+BetterAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9CCCB753921C2618E632F50A9811E /* UIImage+BetterAdditions.h */,
+				B67D1401B389ABD7AF6A7BF799BFF13B /* UIImage+BetterAdditions.m */,
+				80DAB6356D8E629159EEC42B2CEE6DF9 /* Support Files */,
+			);
+			name = "UIImage+BetterAdditions";
+			path = "UIImage+BetterAdditions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A71A9A3D86CCAFB1F005A4AFACE17BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF2A952B6C95BD3C2448CFC731479F6 /* CVCalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E819C6B6C0823E559750E85E6FEA7D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39B8D7A4AF9FE6145DDA7701E3FD2FA /* BRYSerialAnimationQueue-umbrella.h in Headers */,
+				B74ABCCB2254EDC1638369A95A5D8E8B /* BRYSerialAnimationQueue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB9D8C253114F900113DC7C5BCA6C0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F2F05A18EE24F5CA55ED9B67108B899 /* UIColor+Hex.h in Headers */,
+				F8BEBC97D35EB4DAB710F84B99FCFCFE /* UIColor-Hex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449D2D639B3B7A311EE419685FD6E68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F90ACA6D10664AD8257965B1E51DF2 /* UIImage+BetterAdditions-umbrella.h in Headers */,
+				FC33E4BC95EA56D2DEE05C2531C4F865 /* UIImage+BetterAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D502132E50B03B4EA8498C22CA9DA962 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE503163C3B142135889C82C6F5B83B /* SSBouncyButton-umbrella.h in Headers */,
+				5B0E9426904F6A25624A2F8D3F7FFC33 /* SSBouncyButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD00784A2E79400B9972040A5DBAEA16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E1E7C73ADF659B42105AE1A105613B /* Pods-15.05.18-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		005028F4A259C5603C6AFA698F9225D6 /* BRYSerialAnimationQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87076A783EEA8733C5C7BF5B73842725 /* Build configuration list for PBXNativeTarget "BRYSerialAnimationQueue" */;
+			buildPhases = (
+				BCF77B65D3399EA1ADB0A82F41192481 /* Sources */,
+				E060666A5C82689E3E369463CE709ED7 /* Frameworks */,
+				3E819C6B6C0823E559750E85E6FEA7D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRYSerialAnimationQueue;
+			productName = BRYSerialAnimationQueue;
+			productReference = A577B72DD73C5097E3831146E7B2091E /* BRYSerialAnimationQueue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C4187F7D628A6C707C76FDE3749E20A /* UIColor-Hex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3BD52AF57EA41ACC26185AFE227746 /* Build configuration list for PBXNativeTarget "UIColor-Hex" */;
+			buildPhases = (
+				CFC422E07E6E39FEADD8EF8122CB2B33 /* Sources */,
+				F921FF29426CEAA3AF99C96D9D83B664 /* Frameworks */,
+				7BB9D8C253114F900113DC7C5BCA6C0A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIColor-Hex";
+			productName = "UIColor-Hex";
+			productReference = B33355FFA69A9FF6C232824AFED9EF5F /* UIColor_Hex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22183E55C148A7236B34EC2D6AA97F3A /* SSBouncyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11159DDB28635D4BEA6BAF41D1C3B623 /* Build configuration list for PBXNativeTarget "SSBouncyButton" */;
+			buildPhases = (
+				782825A3FAE5001DB6D6FDB6D3B155DF /* Sources */,
+				8BD21726A18778CE01431ECF67B654CC /* Frameworks */,
+				D502132E50B03B4EA8498C22CA9DA962 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177098ACF29C67AFBEFA3AF92132470E /* PBXTargetDependency */,
+				FE9FDCB06DF4B17D7560D3E762E6B543 /* PBXTargetDependency */,
+				E5749C073D6CA2DE5C256FE767D9DEB9 /* PBXTargetDependency */,
+			);
+			name = SSBouncyButton;
+			productName = SSBouncyButton;
+			productReference = 028088D0267A491D051B8C5A7C9DA91D /* SSBouncyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64072F159A2B32BE2F119933E5BE3B99 /* UIImage+BetterAdditions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC0AAAE457147562213D91FDAD57DAF /* Build configuration list for PBXNativeTarget "UIImage+BetterAdditions" */;
+			buildPhases = (
+				5D46B870050C0A4C96C3951EF3F964E1 /* Sources */,
+				6D37D3A4179264FDD77391FA8EE2326A /* Frameworks */,
+				D449D2D639B3B7A311EE419685FD6E68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIImage+BetterAdditions";
+			productName = "UIImage+BetterAdditions";
+			productReference = 055C8B67BF270C9E7ED03D87D5F05FC0 /* UIImage_BetterAdditions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72146277616C7206723292DCA0224DF4 /* Pods-15.05.18 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C68A5F172E6BF864584AC71F6BF9B5 /* Build configuration list for PBXNativeTarget "Pods-15.05.18" */;
+			buildPhases = (
+				138609706E625D7C5C12B5C3E386D285 /* Sources */,
+				01382247082E0681685FEF8E2BE7EBBA /* Frameworks */,
+				DD00784A2E79400B9972040A5DBAEA16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E33B226BFEE39F6E64A9254119759F7 /* PBXTargetDependency */,
+				5A84F2CCCFAAE440D4B9B076168659F1 /* PBXTargetDependency */,
+				57B8422C22583A27BC0FAD33183DDBBD /* PBXTargetDependency */,
+				C37B554D61A81659740C9711B68BB5B9 /* PBXTargetDependency */,
+				B187EBA61DE314F280DE90E88720A2E8 /* PBXTargetDependency */,
+			);
+			name = "Pods-15.05.18";
+			productName = "Pods-15.05.18";
+			productReference = 2D3B44E39056F1CFA5DEC23C824584F8 /* Pods_15_05_18.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6204A345A37C6CEE4D4E8E67F6A48C5 /* CVCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EAF9B76FE428E92232F57F5179D3D4A /* Build configuration list for PBXNativeTarget "CVCalendar" */;
+			buildPhases = (
+				FE8F272777D15AD0F93638EC49711F73 /* Sources */,
+				88FBC684D2AE781EE14566E6E917E7F1 /* Frameworks */,
+				0A71A9A3D86CCAFB1F005A4AFACE17BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CVCalendar;
+			productName = CVCalendar;
+			productReference = FC798BD05EF171C132C743558151A005 /* CVCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E20A0067FEC9E2BE4FFDC6DFA2AF629E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				005028F4A259C5603C6AFA698F9225D6 /* BRYSerialAnimationQueue */,
+				F6204A345A37C6CEE4D4E8E67F6A48C5 /* CVCalendar */,
+				72146277616C7206723292DCA0224DF4 /* Pods-15.05.18 */,
+				22183E55C148A7236B34EC2D6AA97F3A /* SSBouncyButton */,
+				1C4187F7D628A6C707C76FDE3749E20A /* UIColor-Hex */,
+				64072F159A2B32BE2F119933E5BE3B99 /* UIImage+BetterAdditions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138609706E625D7C5C12B5C3E386D285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CEEDEF3E0DA968FB9A712ECEE8FF8D /* Pods-15.05.18-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D46B870050C0A4C96C3951EF3F964E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0A069D7638FF4A3DE89AAA356B2BFF /* UIImage+BetterAdditions-dummy.m in Sources */,
+				9B829B8E2E5514F9321AA13524F3D16C /* UIImage+BetterAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		782825A3FAE5001DB6D6FDB6D3B155DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FC818B1F09AC9AAE2C3E1167D8EBE26 /* SSBouncyButton-dummy.m in Sources */,
+				066227711F9C41F8D2713877141F99DD /* SSBouncyButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF77B65D3399EA1ADB0A82F41192481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D433CA471973BC21DA610BC14BCEEB /* BRYSerialAnimationQueue-dummy.m in Sources */,
+				A35FFF8775E5736CB18803C37BC57BCB /* BRYSerialAnimationQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC422E07E6E39FEADD8EF8122CB2B33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E7A26C7865082B28BFFFE0D03E5BFC /* UIColor+Hex.m in Sources */,
+				24EC8DB300E51AA037D137A3DAFC2092 /* UIColor-Hex-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8F272777D15AD0F93638EC49711F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFFE94D8FC5B5148E6D0EA875F04CED /* CVAuxiliaryView.swift in Sources */,
+				8E979FF9BD29B0E1AC215131505A2500 /* CVCalendar-dummy.m in Sources */,
+				087D4DB198079D0A6E0E9EBF496C36A6 /* CVCalendarContentPresentationCoordinator.swift in Sources */,
+				95819756446657DB136F6B9AD56ACC7C /* CVCalendarContentViewController.swift in Sources */,
+				EF8CEC10476EF1286E987A05C489CF14 /* CVCalendarDayView.swift in Sources */,
+				08E25D571F4067DB88E3737B73FCB550 /* CVCalendarDayViewControlCoordinator.swift in Sources */,
+				BD8C1994C5993519099C91760E4A0A4F /* CVCalendarManager.swift in Sources */,
+				0AEC580E53B574CADD2DFED5554D431B /* CVCalendarMenuView.swift in Sources */,
+				B21CAD5B3C99F2828E72AB852501949E /* CVCalendarMenuViewDelegate.swift in Sources */,
+				297AE389C5B80A95FAE99BF052A78B77 /* CVCalendarMonthContentViewController.swift in Sources */,
+				424098A17F6312CDB3CBC82A24B9FB5F /* CVCalendarMonthView.swift in Sources */,
+				0C5827DA5FCEBF2B397BE32E63CA4951 /* CVCalendarTouchController.swift in Sources */,
+				35D405A2446841B470D3CD2ABBD9E28A /* CVCalendarView.swift in Sources */,
+				4ACC400C627AB34EE49E9F683BC3ADB6 /* CVCalendarViewAnimator.swift in Sources */,
+				5D46EC7EC415BB4CB732CB199C3DB274 /* CVCalendarViewAnimatorDelegate.swift in Sources */,
+				080317F9E7AE9ECA5859B198E6983F87 /* CVCalendarViewAppearance.swift in Sources */,
+				FFA3BA94195F28E6ECB5E4E96211DE54 /* CVCalendarViewAppearanceDelegate.swift in Sources */,
+				7B4519379C79938C793F33A9D7055C89 /* CVCalendarViewDelegate.swift in Sources */,
+				2A65EB93526EFEF8BC8A87D29D0C2E2D /* CVCalendarViewPresentationMode.swift in Sources */,
+				0D18B8FA495BCFC1F34B12C112A24FA9 /* CVCalendarWeekContentViewController.swift in Sources */,
+				29D85DDD40D5465482974288F00D5888 /* CVCalendarWeekday.swift in Sources */,
+				862114DAF0FC44D31E88FF39EDCB74EE /* CVCalendarWeekView.swift in Sources */,
+				8E2890DC209BEA261A65158E8628B245 /* CVDate.swift in Sources */,
+				24DE5BC49B434239C01F130853F3BB47 /* CVPresent.swift in Sources */,
+				0DE8F79470976EA5F734815367C3A93D /* CVRange.swift in Sources */,
+				CFED8618DEDF5E496ED11172CC566D36 /* CVScrollDirection.swift in Sources */,
+				F7AF1C86AB6D1593D751B0E1832A0ADD /* CVSelectionType.swift in Sources */,
+				3E3DBD80B0079A74FEA10F980A1E1F65 /* CVSet.swift in Sources */,
+				08C9374922D4362EF536856FFA6807D1 /* CVShape.swift in Sources */,
+				55992F417E3CEB82C9D0801FF8F7C683 /* CVStatus.swift in Sources */,
+				636776ABDD81484870BD1A74A8930A42 /* CVWeekdaySymbolType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E33B226BFEE39F6E64A9254119759F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BRYSerialAnimationQueue;
+			target = 005028F4A259C5603C6AFA698F9225D6 /* BRYSerialAnimationQueue */;
+			targetProxy = B4EFEDB727FE349BA13EED3C702DF2A0 /* PBXContainerItemProxy */;
+		};
+		177098ACF29C67AFBEFA3AF92132470E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BRYSerialAnimationQueue;
+			target = 005028F4A259C5603C6AFA698F9225D6 /* BRYSerialAnimationQueue */;
+			targetProxy = EB11D83105B185B3F57203EDB3619EA4 /* PBXContainerItemProxy */;
+		};
+		57B8422C22583A27BC0FAD33183DDBBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSBouncyButton;
+			target = 22183E55C148A7236B34EC2D6AA97F3A /* SSBouncyButton */;
+			targetProxy = B75CB0A21EE2E38310AA8B76C80532F8 /* PBXContainerItemProxy */;
+		};
+		5A84F2CCCFAAE440D4B9B076168659F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CVCalendar;
+			target = F6204A345A37C6CEE4D4E8E67F6A48C5 /* CVCalendar */;
+			targetProxy = EE67802074F84FA30A28FAC41A755ACF /* PBXContainerItemProxy */;
+		};
+		B187EBA61DE314F280DE90E88720A2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIImage+BetterAdditions";
+			target = 64072F159A2B32BE2F119933E5BE3B99 /* UIImage+BetterAdditions */;
+			targetProxy = 9D075A5C48384B2FED25A0E4E9C00517 /* PBXContainerItemProxy */;
+		};
+		C37B554D61A81659740C9711B68BB5B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-Hex";
+			target = 1C4187F7D628A6C707C76FDE3749E20A /* UIColor-Hex */;
+			targetProxy = A46C779593E6AFB4670F260865EFE277 /* PBXContainerItemProxy */;
+		};
+		E5749C073D6CA2DE5C256FE767D9DEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIImage+BetterAdditions";
+			target = 64072F159A2B32BE2F119933E5BE3B99 /* UIImage+BetterAdditions */;
+			targetProxy = A0E0FF5ABC5B06528DE225E0A6E4E9ED /* PBXContainerItemProxy */;
+		};
+		FE9FDCB06DF4B17D7560D3E762E6B543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-Hex";
+			target = 1C4187F7D628A6C707C76FDE3749E20A /* UIColor-Hex */;
+			targetProxy = 337A4067771A2FD38A4FFA2713283BF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17669A920C54EEB8E5D845A0BE2C516B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCECE25B58C5081538D10A2CF5FBFB01 /* UIColor-Hex.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex/UIColor-Hex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex/UIColor-Hex.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex;
+				PRODUCT_NAME = UIColor_Hex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		521C98E4FA37201973E12E4D47A7E3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E52406F30897E654844F5CBF6F6DD69 /* BRYSerialAnimationQueue.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BRYSerialAnimationQueue/BRYSerialAnimationQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYSerialAnimationQueue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BRYSerialAnimationQueue/BRYSerialAnimationQueue.modulemap";
+				PRODUCT_MODULE_NAME = BRYSerialAnimationQueue;
+				PRODUCT_NAME = BRYSerialAnimationQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6A3FC5E5ABE041D9DD78514E70B62D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC81C14204D22F80E2B0BA60C56C320C /* SSBouncyButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSBouncyButton/SSBouncyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSBouncyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSBouncyButton/SSBouncyButton.modulemap";
+				PRODUCT_MODULE_NAME = SSBouncyButton;
+				PRODUCT_NAME = SSBouncyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		70CAD6A119C09D443E61460F64F54907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA82D53DC510A62DF5DE082C24A9072E /* CVCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CVCalendar/CVCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CVCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CVCalendar/CVCalendar.modulemap";
+				PRODUCT_MODULE_NAME = CVCalendar;
+				PRODUCT_NAME = CVCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		824CC5EADBD454309C71E8B926C0FC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA82D53DC510A62DF5DE082C24A9072E /* CVCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CVCalendar/CVCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CVCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CVCalendar/CVCalendar.modulemap";
+				PRODUCT_MODULE_NAME = CVCalendar;
+				PRODUCT_NAME = CVCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AD0C2BBA6D0CC44FCAC441CFC6F68A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC81C14204D22F80E2B0BA60C56C320C /* SSBouncyButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSBouncyButton/SSBouncyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSBouncyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSBouncyButton/SSBouncyButton.modulemap";
+				PRODUCT_MODULE_NAME = SSBouncyButton;
+				PRODUCT_NAME = SSBouncyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACA9E36C910E89464E2A86CEE84E46B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3E41BCF4775D38CDE96B50DB8BCFD9 /* Pods-15.05.18.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-15.05.18/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-15.05.18/Pods-15.05.18.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C989000E3BC19A6BBACBA41082728F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE60426119954BF70A2293D851FDB88A /* UIImage+BetterAdditions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImage+BetterAdditions/UIImage+BetterAdditions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImage+BetterAdditions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIImage+BetterAdditions/UIImage+BetterAdditions.modulemap";
+				PRODUCT_MODULE_NAME = UIImage_BetterAdditions;
+				PRODUCT_NAME = UIImage_BetterAdditions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC0738F5035810022A0AF59E155C0C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCECE25B58C5081538D10A2CF5FBFB01 /* UIColor-Hex.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex/UIColor-Hex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex/UIColor-Hex.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex;
+				PRODUCT_NAME = UIColor_Hex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F16263A19236BB91C302290EA0F7F8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE60426119954BF70A2293D851FDB88A /* UIImage+BetterAdditions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImage+BetterAdditions/UIImage+BetterAdditions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImage+BetterAdditions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIImage+BetterAdditions/UIImage+BetterAdditions.modulemap";
+				PRODUCT_MODULE_NAME = UIImage_BetterAdditions;
+				PRODUCT_NAME = UIImage_BetterAdditions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3A697053FEBBBB163927E9DBD254BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506B612611ABEC61EEA71ECB40374027 /* Pods-15.05.18.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-15.05.18/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-15.05.18/Pods-15.05.18.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE9ABBA050C38AC9672EC7EFAD55AB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E52406F30897E654844F5CBF6F6DD69 /* BRYSerialAnimationQueue.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BRYSerialAnimationQueue/BRYSerialAnimationQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYSerialAnimationQueue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BRYSerialAnimationQueue/BRYSerialAnimationQueue.modulemap";
+				PRODUCT_MODULE_NAME = BRYSerialAnimationQueue;
+				PRODUCT_NAME = BRYSerialAnimationQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11159DDB28635D4BEA6BAF41D1C3B623 /* Build configuration list for PBXNativeTarget "SSBouncyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3FC5E5ABE041D9DD78514E70B62D07 /* Debug */,
+				9AD0C2BBA6D0CC44FCAC441CFC6F68A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E3BD52AF57EA41ACC26185AFE227746 /* Build configuration list for PBXNativeTarget "UIColor-Hex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17669A920C54EEB8E5D845A0BE2C516B /* Debug */,
+				EC0738F5035810022A0AF59E155C0C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EAF9B76FE428E92232F57F5179D3D4A /* Build configuration list for PBXNativeTarget "CVCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CAD6A119C09D443E61460F64F54907 /* Debug */,
+				824CC5EADBD454309C71E8B926C0FC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C68A5F172E6BF864584AC71F6BF9B5 /* Build configuration list for PBXNativeTarget "Pods-15.05.18" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A697053FEBBBB163927E9DBD254BB0 /* Debug */,
+				ACA9E36C910E89464E2A86CEE84E46B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87076A783EEA8733C5C7BF5B73842725 /* Build configuration list for PBXNativeTarget "BRYSerialAnimationQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE9ABBA050C38AC9672EC7EFAD55AB9D /* Debug */,
+				521C98E4FA37201973E12E4D47A7E3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC0AAAE457147562213D91FDAD57DAF /* Build configuration list for PBXNativeTarget "UIImage+BetterAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C989000E3BC19A6BBACBA41082728F45 /* Debug */,
+				F16263A19236BB91C302290EA0F7F8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
