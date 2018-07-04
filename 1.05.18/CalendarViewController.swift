@@ -13,6 +13,7 @@ class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalend
     func presentationMode() -> CalendarMode {
         return .monthView
     }
+    @IBOutlet weak var image: UIImageView!
     
     func firstWeekday() -> Weekday {
         return .monday
@@ -28,4 +29,12 @@ class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalend
         menuView.commitMenuViewUpdate()
         calendarView.commitCalendarViewUpdate()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue" {
+            if let destinationVC = segue.destination as? CalendarViewController {
+                destinationVC.image = 
+            }
+        }
+    }
+    
 }

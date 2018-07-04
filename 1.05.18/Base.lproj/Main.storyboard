@@ -175,7 +175,7 @@
                                             <outlet property="container" destination="MWo-Ov-lfl" id="nDl-TR-KAK"/>
                                             <outlet property="imageFruits" destination="4YJ-Gy-sda" id="8yk-nc-RDB"/>
                                             <outlet property="labelFruits" destination="yC5-G0-Vcj" id="4L0-Zc-V5X"/>
-                                            <segue destination="Dbw-x3-y2u" kind="show" id="Gc5-rC-9cO"/>
+                                            <segue destination="Dbw-x3-y2u" kind="show" identifier="segue" id="Gc5-rC-9cO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -226,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcK-Mg-ZM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2544.8000000000002" y="134.48275862068968"/>
+            <point key="canvasLocation" x="3126" y="134"/>
         </scene>
         <!--Calendar Delegate-->
         <scene sceneID="iQd-RS-8Hr">
@@ -247,19 +247,29 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVr-rC-Ufj" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="calendarDelegate" destination="Dbw-x3-y2u" id="crR-bW-bmx"/>
                                 </connections>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vKH-Yp-BtL">
+                                <rect key="frame" x="137" y="503" width="100" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bkA-V1-Xzn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vKH-Yp-BtL" firstAttribute="top" secondItem="BVr-rC-Ufj" secondAttribute="bottom" constant="8" id="0Us-9t-7dp"/>
                             <constraint firstItem="BVr-rC-Ufj" firstAttribute="leading" secondItem="3rk-Vy-LeY" secondAttribute="leading" id="2lr-6I-i7e"/>
+                            <constraint firstItem="vKH-Yp-BtL" firstAttribute="centerX" secondItem="BVr-rC-Ufj" secondAttribute="centerX" id="CF0-MO-g4d"/>
                             <constraint firstItem="irK-QS-hfU" firstAttribute="top" secondItem="6Ha-LM-Fjy" secondAttribute="top" constant="64" id="Dlv-Bw-hCg"/>
+                            <constraint firstItem="3rk-Vy-LeY" firstAttribute="bottom" secondItem="BVr-rC-Ufj" secondAttribute="bottom" constant="172" id="ETb-N5-lCR"/>
+                            <constraint firstItem="vKH-Yp-BtL" firstAttribute="top" secondItem="BVr-rC-Ufj" secondAttribute="bottom" constant="8" id="RIj-Jz-ptw"/>
+                            <constraint firstItem="3rk-Vy-LeY" firstAttribute="bottom" secondItem="vKH-Yp-BtL" secondAttribute="bottom" constant="8" id="YiB-pJ-RgM"/>
                             <constraint firstItem="irK-QS-hfU" firstAttribute="leading" secondItem="3rk-Vy-LeY" secondAttribute="leading" id="b35-wz-qD4"/>
-                            <constraint firstItem="3rk-Vy-LeY" firstAttribute="bottom" secondItem="BVr-rC-Ufj" secondAttribute="bottom" id="cnt-iI-mkk"/>
                             <constraint firstItem="BVr-rC-Ufj" firstAttribute="top" secondItem="irK-QS-hfU" secondAttribute="bottom" id="eux-vW-Dp6"/>
                             <constraint firstItem="BVr-rC-Ufj" firstAttribute="trailing" secondItem="3rk-Vy-LeY" secondAttribute="trailing" id="ohH-XF-vqf"/>
                             <constraint firstItem="irK-QS-hfU" firstAttribute="trailing" secondItem="3rk-Vy-LeY" secondAttribute="trailing" id="sLC-Gs-9v5"/>
@@ -268,6 +278,7 @@
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="BVr-rC-Ufj" id="kwF-lu-PIQ"/>
+                        <outlet property="image" destination="vKH-Yp-BtL" id="EDt-PX-520"/>
                         <outlet property="menuView" destination="irK-QS-hfU" id="vnj-Te-Atv"/>
                     </connections>
                 </viewController>
