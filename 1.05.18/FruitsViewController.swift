@@ -43,7 +43,22 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
    
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow{
+            let fruit = frutsDict[indexPath.row]
+            var image: UIImage? = nil
+            
+            if fruit == "Bananas"{
+                image = #imageLiteral(resourceName: "banana")
+            }
+            
+            
+            
+            
+            let detailVC = segue.destination as! CalendarViewController
+            detailVC.image.image = image
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return frutsDict.count
