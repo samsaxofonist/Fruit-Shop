@@ -46,19 +46,40 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow{
             let fruit = frutsDict[indexPath.row]
-            var image: UIImage? = nil
-            
-            if fruit == "Bananas"{
-                image = #imageLiteral(resourceName: "banana")
-            }
-            
-            
             
             
             let detailVC = segue.destination as! CalendarViewController
-            detailVC.image.image = image
+            detailVC.receivedImage = imageFromName(name: fruit)
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    func imageFromName(name: String) -> UIImage {
+        
+        if name == "Bananas"{
+            return #imageLiteral(resourceName: "banana")
+        } else if name == "Pineapples" {
+            return #imageLiteral(resourceName: "pineapple")
+        } else if name == "Fresh" {
+            return #imageLiteral(resourceName: "iconWatermelon")
+        } else if name == "Exotic" {
+            return #imageLiteral(resourceName: "iconExotic")
+        } else if name == "Nuts" {
+            return #imageLiteral(resourceName: "iconNut")
+        } else {
+            return #imageLiteral(resourceName: "placeholder")
+        }
+    }
+    
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return frutsDict.count
@@ -68,20 +89,7 @@ class FruitsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell: CellFruts = self.tableView.dequeueReusableCell(withIdentifier: "secondCell") as! CellFruts
         let nameOfFruts = frutsDict[indexPath.row]
         cell.labelFruits.text = nameOfFruts
-        
-        if nameOfFruts == "Bananas" {
-            cell.imageFruits.image = UIImage(named: "banana")
-        } else if nameOfFruts == "Pineapples" {
-            cell.imageFruits.image = #imageLiteral(resourceName: "pineapple")
-        } else if nameOfFruts == "Fresh" {
-            cell.imageFruits.image = UIImage(named: "iconWatermelon")
-        } else if nameOfFruts == "Exotic" {
-            cell.imageFruits.image = UIImage(named: "iconExotic")
-        } else if nameOfFruts == "Nuts" {
-            cell.imageFruits.image = #imageLiteral(resourceName: "iconNut")
-        } else {
-            cell.imageFruits.image = #imageLiteral(resourceName: "placeholder")
-        }
+        cell.imageFruits.image = imageFromName(name: nameOfFruts)
         return cell
     }
     private func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: IndexPath) -> Bool {

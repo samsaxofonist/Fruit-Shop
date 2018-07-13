@@ -11,7 +11,7 @@
 
         class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
             
-            @IBOutlet weak var image: UIImageView!
+            @IBOutlet weak var imageView: UIImageView!
             var receivedImage : UIImage?
             @IBOutlet weak var calendarView: CVCalendarView!
             @IBOutlet weak var menuView: CVCalendarMenuView!
@@ -24,9 +24,10 @@
             func presentationMode() -> CalendarMode {
                 return .monthView
             }
+            
             override func viewDidLoad() {
                 super.viewDidLoad()
-                image.image = receivedImage
+                imageView.image = receivedImage
             }
             
                 override func viewDidLayoutSubviews() {

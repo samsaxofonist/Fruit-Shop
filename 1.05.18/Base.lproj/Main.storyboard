@@ -253,7 +253,7 @@
                                     <outlet property="calendarDelegate" destination="Dbw-x3-y2u" id="crR-bW-bmx"/>
                                 </connections>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vKH-Yp-BtL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vKH-Yp-BtL">
                                 <rect key="frame" x="137" y="503" width="100" height="156"/>
                                 <accessibility key="accessibilityConfiguration" identifier="imageCalendarController"/>
                                 <constraints>
@@ -279,7 +279,7 @@
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="BVr-rC-Ufj" id="kwF-lu-PIQ"/>
-                        <outlet property="image" destination="vKH-Yp-BtL" id="EDt-PX-520"/>
+                        <outlet property="imageView" destination="vKH-Yp-BtL" id="T8x-fA-pew"/>
                         <outlet property="menuView" destination="irK-QS-hfU" id="vnj-Te-Atv"/>
                     </connections>
                 </viewController>
